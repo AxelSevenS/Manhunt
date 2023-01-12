@@ -2,15 +2,16 @@ function manhunt:setup
 
 function manhunt:reset
 
-
+team leave @a
 
 team join hunted @r
 team join hunters @a[team=!hunted]
 
 
-spreadplayers 0 0 50 5000 true @a
-execute at @r run setworldspawn ~ ~ ~
+spreadplayers 0 0 0 5000 false @a[team=hunted, limit=1]
+execute at @s run setworldspawn ~ ~ ~
 execute at @s run worldborder center ~ ~
+execute at @s run spreadplayers ~ ~ 50 100 true @a
 time set day
 weather clear
 worldborder set 200 40
@@ -32,7 +33,7 @@ playsound entity.ender_dragon.growl ambient @a
 # Setup and Inventory
 
 effect clear @a
-effect give @a saturation 10 255 true
+effect give @a saturation 10 3 true
 effect give @a minecraft:regeneration 10 255 true
 
 
