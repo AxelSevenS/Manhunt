@@ -1,0 +1,25 @@
+{
+    "function" : "minecraft:copy_nbt", 
+    "source" : {
+        "type" : "storage", 
+        "source" : "manhunt:hunted-position"
+    },
+    "target" : "this", 
+    "ops": [ 
+        {
+            "source" : "PosX",
+            "target" : "LodestonePos.X",
+            "op" : "replace"
+        },
+        {
+            "source" : "PosY", 
+            "target" : "LodestonePos.Y",
+            "op" : "replace"
+        },
+        {
+            "source" : "PosZ", 
+            "target" : "LodestonePos.Z",
+            "op" : "replace"
+        }
+    ]
+}
