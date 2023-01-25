@@ -22,6 +22,9 @@ gamemode survival @a
 # Finished teleporting players
 
 
+
+bossbar add reveal-timer [{"text":"Temps Écoulé: ","color":"red","style":"solid"}, {"score": {"name":"Hours", "objective":"manhunt"},"color":"red","style":"bold"}, {"text":"h","color":"red","style":"solid"}, {"score": {"name":"Minutes", "objective":"manhunt"},"color":"red","style":"bold"}, {"text":"m","color":"red","style":"solid"}, {"score": {"name":"Seconds", "objective":"manhunt"},"color":"red","style":"bold"}, {"text":"s","color":"red","style":"solid"}]
+bossbar set reveal-timer max 360
 bossbar set reveal-timer visible true
 
 playsound entity.ender_dragon.growl ambient @a

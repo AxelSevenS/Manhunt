@@ -11,8 +11,7 @@ execute store result bossbar reveal-timer value run scoreboard players get Revea
 
 
 
-
-
+# TODO : role-specific traits
 
 execute as @a[nbt={SelectedItem:{id:"minecraft:netherite_sword"}}] run effect give @s minecraft:weakness 1 3 true
 execute as @a if entity @s[nbt={SelectedItem:{id:"minecraft:shield"}}] run effect give @s minecraft:slowness 1 3 true
@@ -24,9 +23,10 @@ execute if score #bool manhunt matches 1 run scoreboard players reset @s player_
 
 
 
-# Classes-specific traits
-execute as @a[team=hunters, tag=class-trapper] run function manhunt:roles/trapper/tick
-execute as @a[team=hunters, tag=class-tracker] run function manhunt:roles/tracker/tick
+# role-specific traits
+
+execute as @a[tag=role-trapper] run function manhunt:roles/trapper/tick
+execute as @a[tag=role-tracker] run function manhunt:roles/tracker/tick
 
 # Timer Update
 function manhunt:timer-tick

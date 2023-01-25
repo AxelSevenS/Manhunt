@@ -22,12 +22,16 @@ execute if score Ongoing manhunt matches 1 if score #bool manhunt matches 1 stor
 execute if score Ongoing manhunt matches 1 if score #bool manhunt matches 1 run tellraw @a {"text": "Nouveau Record!"}
 
 
+bossbar remove reveal-timer
+
 scoreboard players reset #CurrentTime manhunt
 scoreboard players reset #TotalHourSeconds manhunt
 scoreboard players reset #TotalMinuteSeconds manhunt
 scoreboard players reset #TotalSeconds manhunt
 
 team leave @a
+
+scoreboard objectives remove compass-slot
 
 scoreboard players set Ongoing manhunt 0
 scoreboard players set RevealTimer manhunt 0

@@ -1,11 +1,9 @@
-function manhunt:stop-manhunt
+function manhunt:end-game
 
 scoreboard objectives remove manhunt
 scoreboard objectives remove player_deaths
 scoreboard objectives remove player_damage
 scoreboard objectives remove player_health
-
-bossbar remove reveal-timer
 
 data remove storage manhunt:hunted-position PosX
 data remove storage manhunt:hunted-position PosY

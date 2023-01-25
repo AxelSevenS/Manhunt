@@ -1,6 +1,8 @@
 scoreboard players reset @a player_deaths
 scoreboard objectives add player_deaths deathCount "Deaths"
 
+scoreboard objectives add compass-slot dummy "Compass Slot"
+
 scoreboard objectives add manhunt dummy "Data"
 scoreboard objectives setdisplay sidebar manhunt
 

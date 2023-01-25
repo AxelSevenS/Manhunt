@@ -7,6 +7,9 @@ scoreboard objectives add player_damage minecraft.custom:minecraft.damage_taken 
 
 scoreboard players set Ongoing manhunt 0
 
+scoreboard objectives remove coins
+scoreboard objectives add coins dummy
+
 team add hunted "Chassés"
 team modify hunted color blue
 team modify hunted friendlyFire false
@@ -19,10 +22,6 @@ team modify hunters seeFriendlyInvisibles true
 
 team add spectators "Spectateurs"
 team modify spectators color gray
-
-bossbar add reveal-timer [{"text":"Temps Écoulé: ","color":"red","style":"solid"}, {"score": {"name":"Hours", "objective":"manhunt"},"color":"red","style":"bold"}, {"text":"h","color":"red","style":"solid"}, {"score": {"name":"Minutes", "objective":"manhunt"},"color":"red","style":"bold"}, {"text":"m","color":"red","style":"solid"}, {"score": {"name":"Seconds", "objective":"manhunt"},"color":"red","style":"bold"}, {"text":"s","color":"red","style":"solid"}]
-bossbar set reveal-timer max 360
-bossbar set reveal-timer visible false
 
 
 # tellraw @a {"text": "Commencer ?","color": "blue","bold": true}
