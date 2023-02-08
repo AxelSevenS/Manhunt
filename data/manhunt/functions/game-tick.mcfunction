@@ -2,7 +2,7 @@ team join hunters @a[team=]
 
 
 execute if entity @a[team=hunted, scores={player_deaths=1..}] run function manhunt:end-game
-
+execute unless entity @a[team=hunted] run function manhunt:end-game
 
 
 bossbar set reveal-timer players @a
@@ -30,3 +30,5 @@ execute as @a[tag=role-tracker] run function manhunt:roles/tracker/tick
 
 # Timer Update
 function manhunt:timer-tick
+
+function manhunt:utility/update-compass

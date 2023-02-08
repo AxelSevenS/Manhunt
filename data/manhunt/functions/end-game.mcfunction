@@ -32,6 +32,7 @@ scoreboard players reset #TotalSeconds manhunt
 team leave @a
 
 scoreboard objectives remove compass-slot
+scoreboard objectives remove has-compass
 
 scoreboard players set Ongoing manhunt 0
 scoreboard players set RevealTimer manhunt 0

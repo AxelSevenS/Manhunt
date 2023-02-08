@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+      {
+        "rolls": 3,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:silverfish_spawn_egg",
+            
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{trap:1, display: {Name:'[{\"text\":\"Signal Trap\", \"italic\": false}]'}, EntityTag: {id:\"minecraft:armor_stand\", Marker:1b, Small:1b, Invisible:1, ArmorItems:[{},{},{},{id:\"spore_blossom\",Count:1b}],HandItems:[{},{}], DisabledSlots:4144959, Pose:{Head:[180f,0f,0f]}, Tags:[\"signal-trap\"]}}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

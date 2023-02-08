@@ -23,4 +23,4 @@ execute if score #bool manhunt matches 1 run scoreboard players set Minutes manh
 # check if the reveal delay was reached
 execute store success score #bool manhunt run execute if score RevealTimer manhunt matches ..0
 execute if score #bool manhunt matches 1 run function manhunt:utility/reveal-hunted-position
-execute if score #bool manhunt matches 1 run scoreboard players set RevealTimer manhunt 360
+execute if score #bool manhunt matches 1 run scoreboard players set RevealTimer manhunt 180

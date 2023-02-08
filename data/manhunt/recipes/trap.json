@@ -1,0 +1,23 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+      " T ",
+      "TIT",
+      " S "
+    ],
+    "key": {
+      "T": {
+        "item": "stick"
+      },
+      "I": {
+        "item": "iron_ingot"
+      },
+      "S": {
+        "item": "wheat_seeds"
+      }
+    },
+    "result": {
+      "item": "armor_stand",
+      "count": 3
+    }
+  }
