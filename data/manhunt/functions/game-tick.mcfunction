@@ -25,8 +25,8 @@ execute if score #bool manhunt matches 1 run scoreboard players reset @s player_
 
 # role-specific traits
 
-execute as @a[tag=role-trapper] run function manhunt:roles/trapper/tick
-execute as @a[tag=role-tracker] run function manhunt:roles/tracker/tick
+execute as @a[tag=role-trapper, team=hunters] run function manhunt:roles/trapper/tick
+execute as @a[tag=role-tracker, team=hunters] run function manhunt:roles/tracker/tick
 
 # Timer Update
 function manhunt:timer-tick

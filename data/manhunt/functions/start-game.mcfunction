@@ -13,7 +13,8 @@ execute at @a[team=hunted, limit=1] run worldborder center ~ ~
 tp @a @a[team=hunted, limit=1]
 time set day
 weather clear
-worldborder set 200 15
+worldborder set 300 15
+# worldborder set 150 900
 
 gamemode survival @a
 
@@ -51,11 +52,6 @@ effect give @a[team=hunters] minecraft:jump_boost 25 128 true
 effect give @a[team=hunters] minecraft:blindness 25 255 true
 
 effect give @a minecraft:weakness 20 255 true
-# summon minecraft:cow ~ ~ ~ {["team=hunters, limit=1"]}
-summon minecraft:cow ~ ~ ~ {Tags:["hunter"]}
-summon minecraft:cow ~ ~ ~ {Tags:["hunter"]}
-summon minecraft:cow ~ ~ ~ {Tags:["hunter"]}
-summon minecraft:cow ~ ~ ~ {Tags:["hunter"]} 
 
 # scoreboard objectives add placed-armor-stand minecraft.used:minecraft.armor_stand "Placed Armor Stands"
 
