@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "   ",
+    "GGG",
+    "   "
+  ],
+  "key": {
+    "G": {
+      "item": "diamond"
+    }
+  },
+  "result": {
+    "item": "enchanting_table",
+    "count": 1
+  }
+}

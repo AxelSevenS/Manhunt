@@ -5,6 +5,4 @@ playsound entity.experience_orb.pickup master @a[team=hunters] ~ ~ ~ 0.01 1
 title @a times 30 15 30
 title @a actionbar {"text":"Hunted Position Revealed","color":"dark_red","bold":true}
 
-summon minecraft:cow ~ ~ ~ {Tags:["hunted"]}
-summon minecraft:cow ~ ~ ~ {Tags:["hunted"]}
 give @a[nbt={tag:{Tags:["hunted"]}}] minecraft:iron_sword 

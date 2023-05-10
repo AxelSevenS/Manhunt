@@ -7,6 +7,7 @@ data remove storage manhunt:hunted-position PosZ
 
 scoreboard objectives add compass-slot dummy "Compass Slot"
 scoreboard objectives add has-compass dummy "Has Compass"
+scoreboard objectives add trident-cooldown dummy "Trident Cooldown"
 
 scoreboard objectives add manhunt dummy "Data"
 scoreboard objectives setdisplay sidebar manhunt

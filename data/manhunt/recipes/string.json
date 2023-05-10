@@ -2,11 +2,13 @@
   "type": "crafting_shapeless",
   "ingredients": [
       {
-          "item": "minecraft:gravel"
+        "tag": "minecraft:wool"
+    
       }
   ], 
   "result": {
-    "item": "minecraft:sweet_berries",
-    "count": 10
+    "item": "minecraft:string",
+    "count": 6
   }
 }
+

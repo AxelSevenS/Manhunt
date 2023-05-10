@@ -13,7 +13,8 @@ execute at @a[team=hunted, limit=1] run worldborder center ~ ~
 tp @a @a[team=hunted, limit=1]
 time set day
 weather clear
-worldborder set 300 15
+worldborder set 150 15
+execute in minecraft:the_nether run worldborder set 300 15
 # worldborder set 150 900
 
 gamemode survival @a
@@ -36,6 +37,8 @@ playsound entity.ender_dragon.growl ambient @a
 # Setup and Inventory
 
 clear @a
+xp set @a 0 levels
+xp set @a 0 points
 
 item replace entity @a[team=hunters] hotbar.8 with compass{display: {Name: '{"text": "Hunter Compass", "italic": false}'}, LodestoneDimension: "minecraft:overworld", LodestoneTracked: 0b}
 
@@ -47,6 +50,7 @@ effect give @a minecraft:regeneration 25 255 true
 effect give @a[team=hunted] minecraft:invisibility 25 255 true
 effect give @a[team=hunted] minecraft:haste 30 1 true
 effect give @a[team=hunted] minecraft:speed 15 3 true
+effect give @a[team=hunted] minecraft:health_boost 255 1 true
 effect give @a[team=hunters] minecraft:slowness 25 255 true
 effect give @a[team=hunters] minecraft:jump_boost 25 128 true
 effect give @a[team=hunters] minecraft:blindness 25 255 true

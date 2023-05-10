@@ -1,13 +1,12 @@
 {
-    "type": "crafting_shapeless",
-    "ingredients": [
-        {
-            "item": "minecraft:oxeye_daisy"
-        }
-        
-    ], 
-    "result": {
-      "item": "minecraft:sweet_berries",
-      "count": 5
-    }
+  "type": "crafting_shapeless",
+  "ingredients": [
+      {
+          "item": "minecraft:wheat_seeds"
+      }
+  ], 
+  "result": {
+    "item": "minecraft:sweet_berries",
+    "count": 10
   }
+}

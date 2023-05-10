@@ -1,0 +1,27 @@
+{
+
+    "type": "minecraft:entity",
+    "pools": 
+    [
+        {
+        "rolls": 4,
+        "entries": 
+        [
+            {
+            "type": "minecraft:item",
+            "name": "minecraft:enderman_spawn_egg",
+            
+            "functions": 
+            [
+                {
+                "function": "minecraft:set_nbt",
+                "tag": "{trap:1, display: {Name:'[{\"text\":\"Weakening Trap\", \"italic\": false}]'}, EntityTag: {id:\"minecraft:falling_block\",BlockState:{Name:\"minecraft:iron_ore\"}, NoGravity:1b, Silent:1b, Time:-2147483648, Tags:[\"weakening-trap\"]}}"
+                }
+            ]
+            }
+        ]
+        }
+    ]
+  
+}
+    

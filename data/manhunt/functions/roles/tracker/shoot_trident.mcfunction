@@ -1,0 +1,1 @@
+data merge entity @e[type=minecraft:trident, tag=!dory, limit=1, sort=nearest, distance=..3] {NoGravity:1b, pickup:0b, PierceLevel:1b, Tags:["dory"]}

@@ -1,0 +1,7 @@
+{"type":"crafting_shapeless","ingredients":[
+    {"item":"minecraft:gold_block"},
+    {"item":"minecraft:iron_block"}
+],
+"result":
+{"item":"minecraft:potion",
+"tag":"{Potion:\"minecraft:invisibility\"}","count":1}}

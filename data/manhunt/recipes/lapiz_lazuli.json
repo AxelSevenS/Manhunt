@@ -2,11 +2,12 @@
   "type": "crafting_shapeless",
   "ingredients": [
       {
-          "item": "minecraft:gravel"
+        "item":"minecraft:redstone"
+    
       }
   ], 
   "result": {
-    "item": "minecraft:sweet_berries",
-    "count": 10
+    "item": "lapis_lazuli",
+    "count": 1
   }
 }

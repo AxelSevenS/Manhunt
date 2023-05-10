@@ -1,0 +1,17 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "   ",
+    "GGG",
+    "   "
+  ],
+  "key": {
+    "G": {
+      "item": "iron_ingot"
+    }
+  },
+  "result": {
+    "item": "ender_pearl",
+    "count": 2
+  }
+}
