@@ -10,7 +10,7 @@ scoreboard objectives add has-compass dummy "Has Compass"
 scoreboard objectives add trident-cooldown dummy "Trident Cooldown"
 
 scoreboard objectives add manhunt dummy "Data"
-scoreboard objectives setdisplay sidebar manhunt
+# scoreboard objectives setdisplay sidebar manhunt
 
 # Reset worldborder
 worldborder set 1000000

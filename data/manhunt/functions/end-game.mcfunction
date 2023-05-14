@@ -1,5 +1,5 @@
 
-execute if score Ongoing manhunt matches 1 run tellraw @a [{"text":"Temps actuel : "}, {"score": {"name": "Hours", "objective":"manhunt"}}, {"text":"h"}, {"score": {"name": "Minutes", "objective":"manhunt"}}, {"text":"m"}, {"score": {"name": "Seconds", "objective":"manhunt"}}, {"text":"s"}]
+execute if score Ongoing manhunt matches 1 run tellraw @a [{"text":"Final Time : "}, {"score": {"name": "Hours", "objective":"manhunt"}}, {"text":"h"}, {"score": {"name": "Minutes", "objective":"manhunt"}}, {"text":"m"}, {"score": {"name": "Seconds", "objective":"manhunt"}}, {"text":"s"}]
 
 
 # calculate the total time in seconds using 
@@ -16,10 +16,11 @@ execute if score Ongoing manhunt matches 1 run scoreboard players operation #Tot
 
 # Check if this game's time was better than the Current best Time 
 execute if score Ongoing manhunt matches 1 store result score #CurrentTime manhunt run data get storage manhunt:record-game Time
-execute if score Ongoing manhunt matches 1 store success score #bool manhunt run scoreboard players operation #CurrentTime manhunt < #TotalSeconds manhunt
+scoreboard players set #bool manhunt 0
+execute if score Ongoing manhunt matches 1 if score #CurrentTime manhunt < #TotalSeconds manhunt run scoreboard players set #bool manhunt 1
 # If yes, replace the Old Best Time
 execute if score Ongoing manhunt matches 1 if score #bool manhunt matches 1 store result storage manhunt:record-game Time int 1 run scoreboard players get #TotalSeconds manhunt
-execute if score Ongoing manhunt matches 1 if score #bool manhunt matches 1 run tellraw @a {"text": "Nouveau Record!"}
+execute if score Ongoing manhunt matches 1 if score #bool manhunt matches 1 run tellraw @a {"text": "New Record!"}
 
 
 bossbar remove reveal-timer

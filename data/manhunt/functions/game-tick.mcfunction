@@ -6,7 +6,7 @@ execute unless entity @a[team=hunted] run function manhunt:end-game
 
 
 bossbar set reveal-timer players @a
-bossbar set reveal-timer name [{"text":"Temps Écoulé: "}, {"score": {"name":"Hours", "objective":"manhunt"}}, {"text":"h"}, {"score": {"name":"Minutes", "objective":"manhunt"}}, {"text":"m"}, {"score": {"name":"Seconds", "objective":"manhunt"}}, {"text":"s"}]
+bossbar set reveal-timer name [{"text":"Ellapsed Time: "}, {"score": {"name":"Hours", "objective":"manhunt"}}, {"text":"h"}, {"score": {"name":"Minutes", "objective":"manhunt"}}, {"text":"m"}, {"score": {"name":"Seconds", "objective":"manhunt"}}, {"text":"s"}]
 execute store result bossbar reveal-timer value run scoreboard players get RevealTimer manhunt
 
 

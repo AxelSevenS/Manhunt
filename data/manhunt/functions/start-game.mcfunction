@@ -7,6 +7,9 @@ team leave @a
 team join hunted @r
 team join hunters @a[team=!hunted]
 
+title @a[team=hunted] title [{"text":"You are the "}, {"text":"Hunted","color":"blue","bold":true}, {"text":"!"}]
+title @a[team=hunters] title [{"text":"You are a "}, {"text":"Hunter","color":"red","bold":true}, {"text":"!"}]
+
 spreadplayers 0 0 0 5000 false @a[team=hunted, limit=1]
 execute at @a[team=hunted, limit=1] run setworldspawn ~ ~ ~
 execute at @a[team=hunted, limit=1] run worldborder center ~ ~
@@ -24,7 +27,7 @@ gamemode survival @a
 
 
 
-bossbar add reveal-timer [{"text":"Temps Écoulé: ","color":"red","style":"solid"}, {"score": {"name":"Hours", "objective":"manhunt"},"color":"red","style":"bold"}, {"text":"h","color":"red","style":"solid"}, {"score": {"name":"Minutes", "objective":"manhunt"},"color":"red","style":"bold"}, {"text":"m","color":"red","style":"solid"}, {"score": {"name":"Seconds", "objective":"manhunt"},"color":"red","style":"bold"}, {"text":"s","color":"red","style":"solid"}]
+bossbar add reveal-timer [{"text":"Ellapsed Time: ","color":"red","style":"solid"}, {"score": {"name":"Hours", "objective":"manhunt"},"color":"red","style":"bold"}, {"text":"h","color":"red","style":"solid"}, {"score": {"name":"Minutes", "objective":"manhunt"},"color":"red","style":"bold"}, {"text":"m","color":"red","style":"solid"}, {"score": {"name":"Seconds", "objective":"manhunt"},"color":"red","style":"bold"}, {"text":"s","color":"red","style":"solid"}]
 bossbar set reveal-timer max 180
 bossbar set reveal-timer visible true
 
